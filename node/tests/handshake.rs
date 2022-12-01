@@ -34,7 +34,7 @@ async fn beacon() -> Beacon<CurrentNetwork, ConsensusMemory<CurrentNetwork>> {
     Beacon::new(
         "127.0.0.1:0".parse().unwrap(),
         None,
-        Account::<CurrentNetwork>::from_str("APrivateKey1zkp2oVPTci9kKcUprnbzMwq95Di1MQERpYBhEeqvkrDirK1").unwrap(),
+        Account::<CurrentNetwork>::from_str("APrivateKey1zkp9RQ1fY8xzWJxZhKr34ECgs7wH6W7GYQqDZ2Z42mKvapQ").unwrap(),
         &[],
         None, // Should load the current network's genesis block.
         None, // No CDN.
@@ -47,7 +47,7 @@ async fn beacon() -> Beacon<CurrentNetwork, ConsensusMemory<CurrentNetwork>> {
 async fn client() -> Client<CurrentNetwork, ConsensusMemory<CurrentNetwork>> {
     Client::new(
         "127.0.0.1:0".parse().unwrap(),
-        Account::<CurrentNetwork>::from_str("APrivateKey1zkp2oVPTci9kKcUprnbzMwq95Di1MQERpYBhEeqvkrDirK1").unwrap(),
+        Account::<CurrentNetwork>::from_str("APrivateKey1zkp9RQ1fY8xzWJxZhKr34ECgs7wH6W7GYQqDZ2Z42mKvapQ").unwrap(),
         &[],
         None,
     )
@@ -58,7 +58,7 @@ async fn client() -> Client<CurrentNetwork, ConsensusMemory<CurrentNetwork>> {
 async fn prover() -> Prover<CurrentNetwork, ConsensusMemory<CurrentNetwork>> {
     Prover::new(
         "127.0.0.1:0".parse().unwrap(),
-        Account::<CurrentNetwork>::from_str("APrivateKey1zkp2oVPTci9kKcUprnbzMwq95Di1MQERpYBhEeqvkrDirK1").unwrap(),
+        Account::<CurrentNetwork>::from_str("APrivateKey1zkp9RQ1fY8xzWJxZhKr34ECgs7wH6W7GYQqDZ2Z42mKvapQ").unwrap(),
         &[],
         None,
     )
@@ -70,7 +70,7 @@ async fn validator() -> Validator<CurrentNetwork, ConsensusMemory<CurrentNetwork
     Validator::new(
         "127.0.0.1:0".parse().unwrap(),
         None,
-        Account::<CurrentNetwork>::from_str("APrivateKey1zkp2oVPTci9kKcUprnbzMwq95Di1MQERpYBhEeqvkrDirK1").unwrap(),
+        Account::<CurrentNetwork>::from_str("APrivateKey1zkp9RQ1fY8xzWJxZhKr34ECgs7wH6W7GYQqDZ2Z42mKvapQ").unwrap(),
         &[],
         None, // Should load the current network's genesis block.
         None, // No CDN.
