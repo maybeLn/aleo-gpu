@@ -49,7 +49,7 @@ features = ["circuit",
   "cli",
   "parallel",
   "parameters",
-  "narkvm-algorithms/cuda"
+  "cuda"
 ]
 
 
